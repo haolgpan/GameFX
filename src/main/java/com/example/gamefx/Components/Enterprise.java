@@ -34,23 +34,54 @@ public class Enterprise extends Component {
         }
     }
 
-    public void shoot() {
-        spawn("bullet", new SpawnData(
-                getEntity().getPosition().getX() + 0,
-                getEntity().getPosition().getY() + 0)
-                .put("direction", direction));
+    public void shoot(int power) {
+        if(power < 5) {
+            spawn("bullet", new SpawnData(
+                    getEntity().getPosition().getX() + 0,
+                    getEntity().getPosition().getY() + 0)
+                    .put("direction", direction));
+        }
+        else if (power >= 5 && power < 10){
+            spawn("bullet", new SpawnData(
+                    getEntity().getPosition().getX() + 0,
+                    getEntity().getPosition().getY() + 0)
+                    .put("direction", direction));
+            spawn("bulletEX", new SpawnData(
+                    getEntity().getPosition().getX() + 30,
+                    getEntity().getPosition().getY() + 30)
+                    .put("direction", direction));
+            spawn("bulletEX", new SpawnData(
+                    getEntity().getPosition().getX() - 30,
+                    getEntity().getPosition().getY() - 30)
+                    .put("direction", direction));
+        }
+        else if (power >= 10){
+            spawn("bullet", new SpawnData(
+                    getEntity().getPosition().getX() + 0,
+                    getEntity().getPosition().getY() + 0)
+                    .put("direction", direction));
+            spawn("bullet", new SpawnData(
+                    getEntity().getPosition().getX() + 5,
+                    getEntity().getPosition().getY() + 5)
+                    .put("direction", direction));
+            spawn("bullet", new SpawnData(
+                    getEntity().getPosition().getX() - 5,
+                    getEntity().getPosition().getY() - 5)
+                    .put("direction", direction));
+            spawn("bulletEX", new SpawnData(
+                    getEntity().getPosition().getX() + 30,
+                    getEntity().getPosition().getY() + 30)
+                    .put("direction", direction));
+            spawn("bulletEX", new SpawnData(
+                    getEntity().getPosition().getX() - 30,
+                    getEntity().getPosition().getY() - 30)
+                    .put("direction", direction));
+            spawn("bulletEX2", new SpawnData(
+                    getEntity().getPosition().getX() - 0,
+                    getEntity().getPosition().getY() - 0)
+                    .put("direction", direction));
+        }
     }
-    public void shoot2() {
-        spawn("bullet", new SpawnData(
-                getEntity().getPosition().getX() + 0,
-                getEntity().getPosition().getY() + 0)
-                .put("direction", direction));
-        spawn("bulletEX", new SpawnData(
-                getEntity().getPosition().getX() + 0,
-                getEntity().getPosition().getY() + 0)
-                .put("direction", direction));
-    }
-
 
     public void die() {
         inc("lives", -1);

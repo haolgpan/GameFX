@@ -2,6 +2,7 @@ package com.example.gamefx;
 
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.app.GameSettings;
+import com.almasb.fxgl.core.math.FXGLMath;
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.entity.EntityFactory;
 import com.almasb.fxgl.entity.SpawnData;
@@ -27,6 +28,7 @@ public class MainGame extends GameApplication {
      * Player object we are going to use to provide to the factory so it can start a bullet from the player center.
      */
     private Entity player;
+    private int power;
 
     private static int screenWidth;
     private static int screenHeight;
@@ -50,10 +52,10 @@ public class MainGame extends GameApplication {
      */
     @Override
     protected void initSettings(GameSettings settings) {
-        settings.setHeight(screenHeight);
-        settings.setWidth(screenWidth);
+        settings.setHeight(700);
+        settings.setWidth(1200);
         settings.setFullScreenAllowed(true);
-        settings.setFullScreenFromStart(true);
+        settings.setFullScreenFromStart(false);
         settings.setTitle("Dead Space but Family Friendly");
         settings.setVersion("0.1");
     }
@@ -67,7 +69,7 @@ public class MainGame extends GameApplication {
         onKey(KeyCode.RIGHT, "right", () -> this.player.getComponent(Enterprise.class).right());
         onKey(KeyCode.UP, "up", () -> this.player.getComponent(Enterprise.class).up());
         onKey(KeyCode.DOWN, "down", () -> this.player.getComponent(Enterprise.class).down());
-        onKeyDown(KeyCode.SPACE, "Bullet", () -> this.player.getComponent(Enterprise.class).shoot());
+        onKeyDown(KeyCode.SPACE, "Bullet", () -> this.player.getComponent(Enterprise.class).shoot(power));
     }
 
     /**
@@ -104,10 +106,17 @@ public class MainGame extends GameApplication {
     protected void initPhysics() {
         onCollisionBegin(Factory.EntityType.ENTERPRISE, Factory.EntityType.CENTER, (enterprise, center) -> this.player.getComponent(Enterprise.class).die());
         onCollisionBegin(Factory.EntityType.ENTERPRISE, Factory.EntityType.ENEMIES, (enemy, enemies) -> this.player.getComponent(Enterprise.class).die());
-        onCollisionBegin(Factory.EntityType.BULLET, Factory.EntityType.ENEMIES, (bullet, enemeis) -> {
+        onCollisionBegin(Factory.EntityType.BULLET, Factory.EntityType.ENEMIES, (bullet, enemies) -> {
             inc("score", 1);
             bullet.removeFromWorld();
-            enemeis.removeFromWorld();
+            enemies.removeFromWorld();
+            if (FXGLMath.randomBoolean()) {
+                spawn("life", getAppWidth() / 2, getAppHeight() / 2);
+            }
+        });
+        onCollision(Factory.EntityType.ENTERPRISE, Factory.EntityType.LIFE,(enterprise, life) ->{
+            inc("lives",1);
+            life.removeFromWorld();
         });
     }
 
@@ -121,16 +130,16 @@ public class MainGame extends GameApplication {
         Text livesLabel = getUIFactoryService().newText("Lives", Color.WHITE, 22);
         Text livesValue = getUIFactoryService().newText("", Color.RED, 22);
 
-        scoreLabel.setTranslateX(20);
+        scoreLabel.setTranslateX(getAppWidth() - 150);
         scoreLabel.setTranslateY(20);
 
-        scoreValue.setTranslateX(90);
+        scoreValue.setTranslateX(getAppWidth() - 80);
         scoreValue.setTranslateY(20);
 
-        livesLabel.setTranslateX(getAppWidth() - 150);
+        livesLabel.setTranslateX(20);
         livesLabel.setTranslateY(20);
 
-        livesValue.setTranslateX(getAppWidth() - 80);
+        livesValue.setTranslateX(90);
         livesValue.setTranslateY(20);
 
         scoreValue.textProperty().bind(getWorldProperties().intProperty("score").asString());
@@ -145,7 +154,8 @@ public class MainGame extends GameApplication {
     @Override
     protected void onUpdate(double tpf) {
         if (getGameWorld().getEntitiesByType(Factory.EntityType.ENEMIES).size() < 10) {
-           // spawn("enemies", getAppWidth() / 2, getAppHeight() / 2);
+            spawn("enemies", getAppWidth() / 2, getAppHeight() / 2);
         }
+        power = geti("score");
     }
 }
