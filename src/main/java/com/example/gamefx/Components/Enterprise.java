@@ -36,10 +36,21 @@ public class Enterprise extends Component {
 
     public void shoot() {
         spawn("bullet", new SpawnData(
-                getEntity().getPosition().getX() + 20,
-                getEntity().getPosition().getY() - 5)
+                getEntity().getPosition().getX() + 0,
+                getEntity().getPosition().getY() + 0)
                 .put("direction", direction));
     }
+    public void shoot2() {
+        spawn("bullet", new SpawnData(
+                getEntity().getPosition().getX() + 0,
+                getEntity().getPosition().getY() + 0)
+                .put("direction", direction));
+        spawn("bulletEX", new SpawnData(
+                getEntity().getPosition().getX() + 0,
+                getEntity().getPosition().getY() + 0)
+                .put("direction", direction));
+    }
+
 
     public void die() {
         inc("lives", -1);

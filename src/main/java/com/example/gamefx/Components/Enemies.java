@@ -11,7 +11,7 @@ public class Enemies extends Component {
     private final Point2D direction = new Point2D(FXGLMath.random(-1D, 1D), FXGLMath.random(-1D, 1D));
     @Override
     public void onUpdate(double tpf) {
-        entity.translate(direction.multiply(3));
+        entity.translate(direction.multiply(4));
         checkForBounds();
     }
 

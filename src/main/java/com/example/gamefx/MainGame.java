@@ -54,7 +54,8 @@ public class MainGame extends GameApplication {
         settings.setWidth(screenWidth);
         settings.setFullScreenAllowed(true);
         settings.setFullScreenFromStart(true);
-        settings.setTitle("Oracle Java Magazine - FXGL");
+        settings.setTitle("Dead Space but Family Friendly");
+        settings.setVersion("0.1");
     }
 
     /**
@@ -89,13 +90,11 @@ public class MainGame extends GameApplication {
         spawn("background", new SpawnData(0, 0).put("width", getAppWidth())
                 .put("height", getAppHeight()));
         int circleRadius = 80;
-        spawn("center", new SpawnData((getAppWidth() / 2) - (circleRadius / 2), (getAppHeight() / 2) - (circleRadius / 2))
-                .put("x", (circleRadius / 2))
-                .put("y", (circleRadius / 2))
-                .put("radius", circleRadius));
+        spawn("center", new SpawnData(getAppCenter()));
+
 
         // Add the player
-        this.player = spawn("duke", 0, 0);
+        this.player = spawn("enterprise", 0, 0);
     }
 
     /**
@@ -103,12 +102,12 @@ public class MainGame extends GameApplication {
      */
     @Override
     protected void initPhysics() {
-        onCollisionBegin(Factory.EntityType.DUKE, Factory.EntityType.CENTER, (duke, center) -> this.player.getComponent(Enterprise.class).die());
-        onCollisionBegin(Factory.EntityType.DUKE, Factory.EntityType.CLOUD, (enemy, cloud) -> this.player.getComponent(Enterprise.class).die());
-        onCollisionBegin(Factory.EntityType.BULLET, Factory.EntityType.CLOUD, (bullet, cloud) -> {
+        onCollisionBegin(Factory.EntityType.ENTERPRISE, Factory.EntityType.CENTER, (enterprise, center) -> this.player.getComponent(Enterprise.class).die());
+        onCollisionBegin(Factory.EntityType.ENTERPRISE, Factory.EntityType.ENEMIES, (enemy, enemies) -> this.player.getComponent(Enterprise.class).die());
+        onCollisionBegin(Factory.EntityType.BULLET, Factory.EntityType.ENEMIES, (bullet, enemeis) -> {
             inc("score", 1);
             bullet.removeFromWorld();
-            cloud.removeFromWorld();
+            enemeis.removeFromWorld();
         });
     }
 
@@ -117,10 +116,10 @@ public class MainGame extends GameApplication {
      */
     @Override
     protected void initUI() {
-        Text scoreLabel = getUIFactoryService().newText("Score", javafx.scene.paint.Color.BLACK, 22);
-        Text scoreValue = getUIFactoryService().newText("", javafx.scene.paint.Color.BLACK, 22);
-        Text livesLabel = getUIFactoryService().newText("Lives", javafx.scene.paint.Color.BLACK, 22);
-        Text livesValue = getUIFactoryService().newText("", Color.BLACK, 22);
+        Text scoreLabel = getUIFactoryService().newText("Score", Color.WHITE, 22);
+        Text scoreValue = getUIFactoryService().newText("", Color.GOLD, 22);
+        Text livesLabel = getUIFactoryService().newText("Lives", Color.WHITE, 22);
+        Text livesValue = getUIFactoryService().newText("", Color.RED, 22);
 
         scoreLabel.setTranslateX(20);
         scoreLabel.setTranslateY(20);
@@ -145,8 +144,8 @@ public class MainGame extends GameApplication {
      */
     @Override
     protected void onUpdate(double tpf) {
-        if (getGameWorld().getEntitiesByType(Factory.EntityType.CLOUD).size() < 10) {
-            spawn("cloud", getAppWidth() / 2, getAppHeight() / 2);
+        if (getGameWorld().getEntitiesByType(Factory.EntityType.ENEMIES).size() < 10) {
+           // spawn("enemies", getAppWidth() / 2, getAppHeight() / 2);
         }
     }
 }

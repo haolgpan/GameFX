@@ -14,8 +14,8 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 
-import static com.almasb.fxgl.dsl.FXGL.entityBuilder;
-import static com.almasb.fxgl.dsl.FXGL.texture;
+import static com.almasb.fxgl.dsl.FXGL.*;
+import static com.almasb.fxgl.dsl.FXGL.getAppHeight;
 
 public class Factory implements EntityFactory {
 
@@ -23,7 +23,7 @@ public class Factory implements EntityFactory {
      * Types of objects we are going to use in our game.
      */
     public enum EntityType {
-        BACKGROUND, CENTER, DUKE, CLOUD, BULLET
+        BACKGROUND, CENTER, ENTERPRISE, ENEMIES, BULLET
     }
 
     @Spawns("background")
@@ -40,17 +40,18 @@ public class Factory implements EntityFactory {
     public Entity spawnCenter(SpawnData data) {
         return entityBuilder(data)
                 .type(EntityType.CENTER)
+                .at(600,250)
                 .collidable()
-                .viewWithBBox(new Circle(data.<Integer>get("x"), data.<Integer>get("y"), data.<Integer>get("radius"), Color.DARKRED))
+                .viewWithBBox(texture("center.png",350,350))
                 .with(new IrremovableComponent())
                 .zIndex(-99)
                 .build();
     }
 
-    @Spawns("duke")
+    @Spawns("enterprise")
     public Entity newDuke(SpawnData data) {
         return entityBuilder(data)
-                .type(EntityType.DUKE)
+                .type(EntityType.ENTERPRISE)
                 .viewWithBBox(texture("enterprise.png", 50, 50))
                 .collidable()
                 .with((new AutoRotationComponent()).withSmoothing())
@@ -58,11 +59,11 @@ public class Factory implements EntityFactory {
                 .build();
     }
 
-    @Spawns("cloud")
+    @Spawns("enemies")
     public Entity newCloud(SpawnData data) {
         return entityBuilder(data)
-                .type(EntityType.CLOUD)
-                .viewWithBBox(texture("cloud-network.png", 50, 50))
+                .type(EntityType.ENEMIES)
+                .viewWithBBox(texture("enemies.png", 50, 50))
                 .with((new AutoRotationComponent()).withSmoothing())
                 .with(new Enemies())
                 .collidable()
@@ -73,9 +74,18 @@ public class Factory implements EntityFactory {
     public Entity newBullet(SpawnData data) {
         return entityBuilder(data)
                 .type(EntityType.BULLET)
-                .viewWithBBox(texture("sprite_bullet.png", 22, 11))
+                .viewWithBBox(texture("laserred1.png", 20, 20))
                 .collidable()
-                .with(new ProjectileComponent(data.get("direction"), 350), new OffscreenCleanComponent())
+                .with(new ProjectileComponent(data.get("direction"), 340), new OffscreenCleanComponent())
+                .build();
+    }
+    @Spawns("bulletEx")
+    public Entity newBulletEx(SpawnData data) {
+        return entityBuilder(data)
+                .type(EntityType.BULLET)
+                .viewWithBBox(texture("laserRed02.png", 30, 30))
+                .collidable()
+                .with(new ProjectileComponent(data.get("direction"), 340), new OffscreenCleanComponent())
                 .build();
     }
 }
