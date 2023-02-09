@@ -69,7 +69,19 @@ public class MainGame extends GameApplication {
         onKey(KeyCode.RIGHT, "right", () -> this.player.getComponent(Enterprise.class).right());
         onKey(KeyCode.UP, "up", () -> this.player.getComponent(Enterprise.class).up());
         onKey(KeyCode.DOWN, "down", () -> this.player.getComponent(Enterprise.class).down());
-        onKeyDown(KeyCode.SPACE, "Bullet", () -> this.player.getComponent(Enterprise.class).shoot(power));
+        onKeyDown(KeyCode.SPACE, "Bullet", () -> {
+            this.player.getComponent(Enterprise.class).shoot(power);
+            if(power < 10) play("sfx_laser1.wav");
+            else if(power >= 10 && power <20) {
+                play("sfx_laser1.wav");
+                play("sfx_laser2.wav");
+            } else if (power >= 20) {
+                play("sfx_laser1.wav");
+                play("sfx_laser2.wav");
+                play("sfx_laser1.wav");
+                play("sfx_laser2.wav");
+            }
+        });
     }
 
     /**
@@ -91,7 +103,6 @@ public class MainGame extends GameApplication {
         getGameWorld().addEntityFactory(this.factory);
         spawn("background", new SpawnData(0, 0).put("width", getAppWidth())
                 .put("height", getAppHeight()));
-        int circleRadius = 80;
         spawn("center", new SpawnData(getAppCenter()));
 
 
@@ -104,15 +115,23 @@ public class MainGame extends GameApplication {
      */
     @Override
     protected void initPhysics() {
-        onCollisionBegin(Factory.EntityType.ENTERPRISE, Factory.EntityType.CENTER, (enterprise, center) -> this.player.getComponent(Enterprise.class).die());
-        onCollisionBegin(Factory.EntityType.ENTERPRISE, Factory.EntityType.ENEMIES, (enemy, enemies) -> this.player.getComponent(Enterprise.class).die());
+        onCollisionBegin(Factory.EntityType.ENTERPRISE, Factory.EntityType.CENTER, (enterprise, center) -> {
+            this.player.getComponent(Enterprise.class).die();
+            play("sfx_lose.wav");
+        });
+        onCollisionBegin(Factory.EntityType.ENTERPRISE, Factory.EntityType.ENEMIES, (enemy, enemies) -> {
+            this.player.getComponent(Enterprise.class).die();
+            play("sfx_lose.wav");
+        });
         onCollisionBegin(Factory.EntityType.BULLET, Factory.EntityType.ENEMIES, (bullet, enemies) -> {
             inc("score", 1);
             bullet.removeFromWorld();
             enemies.removeFromWorld();
+            spawn("explosion",enemies.getX(),enemies.getY());
             if (FXGLMath.randomBoolean()) {
                 spawn("life", getAppWidth() / 2, getAppHeight() / 2);
             }
+            play("explosion.wav");
         });
         onCollision(Factory.EntityType.ENTERPRISE, Factory.EntityType.LIFE,(enterprise, life) ->{
             inc("lives",1);
@@ -153,9 +172,19 @@ public class MainGame extends GameApplication {
      */
     @Override
     protected void onUpdate(double tpf) {
-        if (getGameWorld().getEntitiesByType(Factory.EntityType.ENEMIES).size() < 10) {
-            spawn("enemies", getAppWidth() / 2, getAppHeight() / 2);
-        }
         power = geti("score");
+        if(power < 10) {
+            if (getGameWorld().getEntitiesByType(Factory.EntityType.ENEMIES).size() < 5) {
+                spawn("enemies", getAppWidth() / 2, getAppHeight() / 2);
+            }
+        } else if (power >= 10 && power <= 30) {
+            if (getGameWorld().getEntitiesByType(Factory.EntityType.ENEMIES).size() < 10) {
+                spawn("enemies", getAppWidth() / 2, getAppHeight() / 2);
+            }
+        } else if (power > 30) {
+            if (getGameWorld().getEntitiesByType(Factory.EntityType.ENEMIES).size() < 40) {
+                spawn("enemies", getAppWidth() / 2, getAppHeight() / 2);
+            }
+        }
     }
 }

@@ -1,0 +1,401 @@
+17:41:33.308 [main                     ] DEBUG Logger               - Configured Logger
+17:41:33.309 [main                     ] DEBUG GameApplication      - Logging settings
+Title: Dead Space but Family Friendly
+Version: 0.1
+Width: 1200
+Height: 700
+Fullscreen: true
+Intro: false
+Profiling: false
+Single step:false
+App Mode: DEVELOPER
+Menu Key: ESCAPE
+Stage Style: DECORATED
+Scene Factory: class com.almasb.fxgl.app.scene.SceneFactory
+
+17:41:33.508 [JavaFX Application Thread] DEBUG FXGLApplication      - Initializing FXGL
+17:41:33.509 [JavaFX Application Thread] INFO  Engine               - FXGL-11.16 (25.05.2021 08.16) on WINDOWS (J:18.0.2.1 FX:16)
+17:41:33.509 [JavaFX Application Thread] DEBUG Engine               - JRE Vendor Name: Oracle Corporation
+17:41:33.509 [JavaFX Application Thread] DEBUG Engine               - Running on OS: Windows 10 version 10.0
+17:41:33.509 [JavaFX Application Thread] DEBUG Engine               - Architecture: amd64
+17:41:33.509 [JavaFX Application Thread] INFO  Engine               - Source code and latest versions at: https://github.com/AlmasB/FXGL
+17:41:33.509 [JavaFX Application Thread] INFO  Engine               -              Join the FXGL chat at: https://gitter.im/AlmasB/FXGL
+17:41:33.561 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Creating a JavaFX scene
+17:41:33.585 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Target settings size: 1200.0 x 700.0
+17:41:33.585 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled scene size:    1200.0 x 700.0
+17:41:33.585 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled ratio: (1.0, 1.0)
+17:41:33.586 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Set initial scene to FXGLStartupScene
+17:41:33.590 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Opening main window
+17:41:33.633 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Window border size: (14.4000244140625, 37.5999755859375)
+17:41:33.633 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled size: 1200.0 x 700.0
+17:41:33.633 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled ratio: (1.0, 1.0)
+17:41:33.633 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scene size: 1200.0 x 700.0
+17:41:33.633 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Stage size: 1214.4000244140625 x 737.5999755859375
+17:41:33.638 [FXGL Background Thread 1 ] DEBUG Engine               - Initializing environment variables
+17:41:33.670 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - User app class for loading assets: class com.example.gamefx.MainGame
+17:41:33.670 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Applying CSS: fxgl_dark.css
+17:41:33.670 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/ui/css/fxgl_dark.css
+17:41:33.693 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Initializing application scenes
+17:41:33.720 [FXGL Background Thread 1 ] DEBUG GameWorld            - Game world initialized
+17:41:33.758 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Physics world initialized: appHeight=700, physics.ppm=50,0
+17:41:33.758 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Using strategy: BRUTE_FORCE
+17:41:33.760 [FXGL Background Thread 1 ] DEBUG GameScene            - Game scene initialized: 1200x700
+17:41:33.767 [FXGL Background Thread 1 ] DEBUG FXGL.DefaultMenu     - createMenuBodyGameMenu()
+17:41:33.776 [FXGL Background Thread 1 ] DEBUG FXGL.DefaultMenu     - createOptionsMenu()
+17:41:33.781 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/textures/particles/smoke.png
+17:41:33.844 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/textures/particles/trace_horizontal.png
+17:41:33.864 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Application scenes initialized
+17:41:33.872 [FXGL Background Thread 1 ] DEBUG SystemBundleService  - Loading FXGL system data
+17:41:33.874 [FXGL Background Thread 1 ] DEBUG FileSystemAccess     - Reading from: C:\Users\Hao\Documents\DAM 2 PRO\GameFX\system\fxgl.bundle
+17:41:33.881 [FXGL Background Thread 1 ] DEBUG SystemBundleService  - Bundle FXGL: {}
+17:41:33.881 [FXGL Background Thread 1 ] DEBUG UpdaterService       - Checking for updates
+17:41:33.884 [FXGL Background Thread 4 ] DEBUG FXGLApplication      - Loading fonts
+17:41:33.884 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/ui/fonts/VarelaRound-Regular.ttf
+17:41:33.885 [FXGL Background Thread 1 ] DEBUG FXGLApplication      - Loading default localization
+17:41:33.885 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/languages/english.lang
+17:41:33.900 [FXGL Background Thread 1 ] INFO  FXGLApplication      - FXGL initialization took: 0,262 sec
+17:41:33.910 [JavaFX Application Thread] DEBUG Input                - Registered new binding: left - Left
+17:41:33.910 [JavaFX Application Thread] DEBUG Input                - Registered new binding: right - Right
+17:41:33.910 [JavaFX Application Thread] DEBUG Input                - Registered new binding: up - Up
+17:41:33.911 [JavaFX Application Thread] DEBUG Input                - Registered new binding: down - Down
+17:41:33.912 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Bullet - Space
+17:41:33.912 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/textures/fxgl_icon.png
+17:41:33.920 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/ui/fonts/Abel-Regular.ttf
+17:41:33.922 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/ui/fonts/lucida_console.ttf
+17:41:33.927 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/ui/fonts/Courier-Prime.ttf
+17:41:33.931 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/textures/fxgl_default_cursor.png
+17:41:33.933 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Screenshot - CTRL+8
+17:41:33.933 [JavaFX Application Thread] DEBUG Input                - Registered new binding: System info dump - CTRL+9
+17:41:33.934 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Restart - CTRL+R
+17:41:33.934 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Toggle Debug Camera - CTRL+C
+17:41:33.939 [JavaFX Application Thread] DEBUG LoopRunner           - Starting loop
+17:41:33.939 [JavaFX Application Thread] DEBUG LoopRunner           - Initializing JavaFX AnimationTimerLoop
+17:41:33.941 [JavaFX Application Thread] DEBUG GameApplicationServi - Starting new game
+17:41:33.942 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+17:41:33.953 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from FXGLStartupScene and adding to FXGLLoadingScene
+17:41:33.954 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - FXGLStartupScene -> FXGLLoadingScene
+17:41:33.954 [JavaFX Application Thread] DEBUG GameApplicationServi - Clearing previous game
+17:41:33.954 [JavaFX Application Thread] DEBUG GameScene            - Clearing game scene
+17:41:33.954 [JavaFX Application Thread] DEBUG GameWorld            - Clearing game world
+17:41:33.954 [JavaFX Application Thread] DEBUG PhysicsWorld         - Clearing physics world
+17:41:33.956 [FXGL Background Thread 4 ] DEBUG FXGLApplication      - Initializing game
+17:41:33.956 [JavaFX Application Thread] DEBUG FXGLApplication      - Registering font factories with UI factory
+17:41:33.967 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/space.jpg
+17:41:34.101 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/center.png
+17:41:34.146 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/enterprise.png
+17:41:34.151 [FXGL Background Thread 4 ] INFO  FXGLApplication      - Game initialization took: 0,196 sec
+17:41:34.152 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+17:41:34.156 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from FXGLLoadingScene and adding to GameScene
+17:41:34.157 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - FXGLLoadingScene -> GameScene
+17:41:34.163 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/enemies.png
+17:41:34.360 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/laserred1.png
+17:41:34.363 [FXGL Background Thread 2 ] INFO  UpdaterService       - Your current version:  11.16
+17:41:34.364 [FXGL Background Thread 2 ] INFO  UpdaterService       - Latest stable version: 17.2
+17:41:34.365 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/sounds/sfx_laser1.wav
+17:41:35.453 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/laserYellow_burst.png
+17:41:35.455 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/pill_green.png
+17:41:35.457 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:41:35.457 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/sounds/explosion.wav
+17:41:36.673 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:41:36.884 [FXGL Background Thread 3 ] DEBUG Engine               - Logging environment variables
+17:41:36.884 [FXGL Background Thread 3 ] DEBUG Engine               - achievements: []
+17:41:36.884 [FXGL Background Thread 3 ] DEBUG Engine               - actualHeight: 700.0
+17:41:36.884 [FXGL Background Thread 3 ] DEBUG Engine               - actualHeightProperty: ReadOnlyDoubleProperty [value: 700.0]
+17:41:36.884 [FXGL Background Thread 3 ] DEBUG Engine               - actualWidth: 1200.0
+17:41:36.884 [FXGL Background Thread 3 ] DEBUG Engine               - actualWidthProperty: ReadOnlyDoubleProperty [value: 1200.0]
+17:41:36.884 [FXGL Background Thread 3 ] DEBUG Engine               - appIcon: fxgl_icon.png
+17:41:36.884 [FXGL Background Thread 3 ] DEBUG Engine               - applicationMode: DEVELOPER
+17:41:36.884 [FXGL Background Thread 3 ] DEBUG Engine               - cSSList: [fxgl_dark.css]
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - collisionDetectionStrategy: BRUTE_FORCE
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - configClass: Optional.empty
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - credits: []
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - defaultCursor: CursorInfo(imageName=fxgl_default_cursor.png, hotspotX=7.0, hotspotY=6.0)
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - devBBoxColorProperty: ObjectProperty [value: 0xff0000ff]
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - devEnableDebugCameraProperty: BooleanProperty [value: false]
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - devSensorColorProperty: ObjectProperty [value: 0xffff00ff]
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - devShowBBoxProperty: BooleanProperty [value: false]
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - devShowPositionProperty: BooleanProperty [value: false]
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - enabledMenuItems: []
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - engineServices: [class com.almasb.fxgl.app.services.FXGLAssetLoaderService, class com.almasb.fxgl.app.FXGLApplication$GameApplicationService, class com.almasb.fxgl.app.services.FXGLDialogService, class com.almasb.fxgl.app.services.IOTaskExecutorService, class com.almasb.fxgl.io.FileSystemService, class com.almasb.fxgl.localization.LocalizationService, class com.almasb.fxgl.app.services.SystemBundleService, class com.almasb.fxgl.profile.SaveLoadService, class com.almasb.fxgl.ui.FXGLUIFactoryServiceProvider, class com.almasb.fxgl.ui.FXGLDialogFactoryServiceProvider, class com.almasb.fxgl.audio.AudioPlayer, class com.almasb.fxgl.notification.impl.NotificationServiceProvider, class com.almasb.fxgl.achievement.AchievementService, class com.almasb.fxgl.cutscene.CutsceneService, class com.almasb.fxgl.minigames.MiniGameService, class com.almasb.fxgl.net.NetService, class com.almasb.fxgl.app.services.UpdaterService, class com.almasb.fxgl.dev.DevService]
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - fontGame: Abel-Regular.ttf
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - fontMono: lucida_console.ttf
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - fontText: Courier-Prime.ttf
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - fontUI: VarelaRound-Regular.ttf
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - fullScreen: BooleanProperty [value: false]
+17:41:36.885 [FXGL Background Thread 3 ] DEBUG Engine               - gameDifficulty: MEDIUM
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - gameDifficultyProperty: ObjectProperty [value: MEDIUM]
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - globalMusicVolume: 0.5
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - globalMusicVolumeProperty: DoubleProperty [value: 0.5]
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - globalSoundVolume: 0.5
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - globalSoundVolumeProperty: DoubleProperty [value: 0.5]
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - height: 700
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - is3D: false
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isAndroid: false
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isBrowser: false
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isClickFeedbackEnabled: false
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isCloseConfirmation: false
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isDesktop: true
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isDeveloperMenuEnabled: false
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isEntityPreloadEnabled: true
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isExperimentalTiledLargeMap: false
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isFileSystemWriteAllowed: true
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isFullScreenAllowed: true
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isFullScreenFromStart: false
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isGameMenuEnabled: true
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isIOS: false
+17:41:36.886 [FXGL Background Thread 3 ] DEBUG Engine               - isIntroEnabled: false
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - isLinux: false
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - isMac: false
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - isMainMenuEnabled: false
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - isManualResizeEnabled: false
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - isMobile: false
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - isNative: false
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - isPreserveResizeRatio: false
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - isProfilingEnabled: false
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - isScaleAffectedOnResize: true
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - isSingleStep: false
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - isUserProfileEnabled: false
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - isWindows: true
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - language: ObjectProperty [value: ENGLISH]
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - menuKey: ESCAPE
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - mouseSensitivity: 0.2
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - notificationViewClass: class com.almasb.fxgl.notification.view.XboxNotificationView
+17:41:36.887 [FXGL Background Thread 3 ] DEBUG Engine               - pixelsPerMeter: 50.0
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - platform: WINDOWS
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - prefHeightProperty: ReadOnlyDoubleProperty [value: 700.0]
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - prefWidthProperty: ReadOnlyDoubleProperty [value: 1200.0]
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - profileDir: profiles/
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - profileName: StringProperty [value: DEFAULT]
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - randomSeed: -1
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - runtimeInfo: RuntimeInfo(platform=WINDOWS, version=11.16, build=25.05.2021 08.16)
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - saveFileExt: sav
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - scaledHeightProp$fxgl: DoubleProperty [bound, value: 700.0]
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - scaledWidthProp$fxgl: DoubleProperty [bound, value: 1200.0]
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - sceneFactory: com.almasb.fxgl.app.scene.SceneFactory@7ff51b88
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - secondsIn24h: 60
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - soundMenuBack: menu/back.wav
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - soundMenuPress: menu/press.wav
+17:41:36.888 [FXGL Background Thread 3 ] DEBUG Engine               - soundMenuSelect: menu/select.wav
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - soundNotification: core/notification.wav
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - stageStyle: DECORATED
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - supportedLanguages: [ENGLISH, FRENCH, GERMAN, HUNGARIAN, RUSSIAN]
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - ticksPerSecond: -1
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - title: Dead Space but Family Friendly
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - urlGithub: https://github.com/AlmasB/FXGL
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - urlLeaderboard: http://fxgl-top.herokuapp.com/
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - urlPOM: https://raw.githubusercontent.com/AlmasB/FXGL/release/README.md
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - userAppClass: class com.example.gamefx.MainGame
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - version: 0.1
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - versionCheckDays: 7
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - width: 1200
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - Logging services
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.FXGLAssetLoaderService
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.FXGLApplication$GameApplicationService
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.FXGLDialogService
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.IOTaskExecutorService
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.io.FileSystemService
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.localization.LocalizationService
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.SystemBundleService
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.profile.SaveLoadService
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.ui.FXGLUIFactoryServiceProvider
+17:41:36.889 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.ui.FXGLDialogFactoryServiceProvider
+17:41:36.890 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.audio.AudioPlayer
+17:41:36.890 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.notification.impl.NotificationServiceProvider
+17:41:36.890 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.achievement.AchievementService
+17:41:36.890 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.cutscene.CutsceneService
+17:41:36.890 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.minigames.MiniGameService
+17:41:36.890 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.net.NetService
+17:41:36.890 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.UpdaterService
+17:41:36.890 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.dev.DevService
+17:41:36.940 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/sounds/sfx_lose.wav
+17:41:37.245 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:41:40.009 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:41:43.028 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Push state: DialogSubScene
+17:41:43.029 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+17:41:43.032 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from GameScene and adding to DialogSubScene
+17:41:43.032 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - GameScene -> DialogSubScene
+17:41:45.054 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Pop state: DialogSubScene
+17:41:45.054 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+17:41:45.057 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from DialogSubScene and adding to GameScene
+17:41:45.057 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - GameScene <- DialogSubScene
+17:41:45.058 [JavaFX Application Thread] DEBUG GameApplicationServi - Starting new game
+17:41:45.058 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+17:41:45.064 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from GameScene and adding to FXGLLoadingScene
+17:41:45.064 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - GameScene -> FXGLLoadingScene
+17:41:45.064 [JavaFX Application Thread] DEBUG GameApplicationServi - Clearing previous game
+17:41:45.064 [JavaFX Application Thread] DEBUG GameScene            - Clearing game scene
+17:41:45.064 [JavaFX Application Thread] DEBUG GameWorld            - Clearing game world
+17:41:45.064 [JavaFX Application Thread] DEBUG PhysicsWorld         - Clearing physics world
+17:41:45.065 [FXGL Background Thread 2 ] DEBUG FXGLApplication      - Initializing game
+17:41:45.067 [FXGL Background Thread 2 ] INFO  FXGLApplication      - Game initialization took: 0,002 sec
+17:41:45.068 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+17:41:45.072 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from FXGLLoadingScene and adding to GameScene
+17:41:45.072 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - FXGLLoadingScene -> GameScene
+17:41:47.551 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:41:53.176 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:00.684 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:01.496 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:08.225 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:11.810 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:11.857 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/laserRed02.png
+17:42:11.859 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/sounds/sfx_laser2.wav
+17:42:12.869 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:13.567 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:14.070 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:14.327 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:14.411 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/laserRed04.png
+17:42:15.917 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:18.030 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:18.743 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:18.813 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:18.827 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:18.855 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:18.862 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:18.910 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:18.917 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:19.446 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:20.046 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:20.487 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:20.653 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:21.197 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:21.612 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:22.092 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:23.176 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:23.305 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:23.470 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:23.614 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:23.799 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:24.229 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:24.327 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:24.334 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:24.423 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:24.472 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:24.681 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:24.708 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:24.757 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:24.814 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:24.855 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:24.941 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:25.001 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:25.342 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:25.389 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:26.396 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:26.639 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:27.870 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:28.494 [JavaFX Application Thread] WARN  GameWorld            - Attempted to remove entity which is not active
+17:42:29.070 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:29.086 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:29.243 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:29.246 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:29.502 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:29.758 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:29.799 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:29.823 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:29.867 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:29.965 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:31.270 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:31.663 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:31.722 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:31.758 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:31.790 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:32.253 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:32.326 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:32.430 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:32.846 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:33.086 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:33.687 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:34.056 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:34.541 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:35.049 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:35.118 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:35.452 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:35.500 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:35.514 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:35.674 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:35.757 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:35.854 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:35.965 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:36.298 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:36.549 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:37.368 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:37.500 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:37.541 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:37.550 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:37.710 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:37.741 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:37.833 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:38.090 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:38.126 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:38.222 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:38.375 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:38.462 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:38.617 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:39.294 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:39.645 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:39.854 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:40.639 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:41.333 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:41.354 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:41.771 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:42.069 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:42.139 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:42.299 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:43.614 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:44.041 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:44.062 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:44.125 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:44.943 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:45.541 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:45.687 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:46.445 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:47.048 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:47.111 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:47.735 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:47.806 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:48.569 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:49.145 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:49.465 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:49.847 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:49.917 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:49.944 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:50.015 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:50.253 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:50.486 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:50.728 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:51.083 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:51.214 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:51.277 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:51.388 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:51.895 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:52.014 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:52.297 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:52.666 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:53.125 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+17:42:53.291 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Push state: DialogSubScene
+17:42:53.291 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+17:42:53.291 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from GameScene and adding to DialogSubScene
+17:42:53.291 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - GameScene -> DialogSubScene
+17:42:55.237 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Pop state: DialogSubScene
+17:42:55.237 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+17:42:55.239 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from DialogSubScene and adding to GameScene
+17:42:55.239 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - GameScene <- DialogSubScene
+17:42:55.239 [JavaFX Application Thread] DEBUG GameApplicationServi - Starting new game
+17:42:55.239 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+17:42:55.249 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from GameScene and adding to FXGLLoadingScene
+17:42:55.249 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - GameScene -> FXGLLoadingScene
+17:42:55.249 [JavaFX Application Thread] DEBUG GameApplicationServi - Clearing previous game
+17:42:55.249 [JavaFX Application Thread] DEBUG GameScene            - Clearing game scene
+17:42:55.249 [JavaFX Application Thread] DEBUG GameWorld            - Clearing game world
+17:42:55.250 [JavaFX Application Thread] DEBUG PhysicsWorld         - Clearing physics world
+17:42:55.250 [FXGL Background Thread 5 ] DEBUG FXGLApplication      - Initializing game
+17:42:55.252 [FXGL Background Thread 5 ] INFO  FXGLApplication      - Game initialization took: 0,002 sec
+17:42:55.253 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+17:42:55.256 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from FXGLLoadingScene and adding to GameScene
+17:42:55.256 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - FXGLLoadingScene -> GameScene
+17:42:58.139 [JavaFX Application Thread] DEBUG FXGLApplication      - Exiting FXGL
+17:42:58.139 [JavaFX Application Thread] DEBUG LoopRunner           - Stopping loop
+17:42:58.139 [JavaFX Application Thread] DEBUG SystemBundleService  - Saving FXGL system data
+17:42:58.145 [JavaFX Application Thread] DEBUG FileSystemAccess     - Writing to: C:\Users\Hao\Documents\DAM 2 PRO\GameFX\system\fxgl.bundle
+17:42:58.147 [JavaFX Application Thread] DEBUG Async                - Shutting down background threads
+17:42:58.147 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Closing main window
+17:42:58.159 [JavaFX Application Thread] DEBUG Logger               - Closing Logger

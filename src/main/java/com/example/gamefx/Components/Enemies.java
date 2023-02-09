@@ -1,14 +1,15 @@
 package com.example.gamefx.Components;
 
 import com.almasb.fxgl.core.math.FXGLMath;
+import com.almasb.fxgl.entity.SpawnData;
 import com.almasb.fxgl.entity.component.Component;
 import javafx.geometry.Point2D;
 
-import static com.almasb.fxgl.dsl.FXGL.getAppHeight;
-import static com.almasb.fxgl.dsl.FXGL.getAppWidth;
+import static com.almasb.fxgl.dsl.FXGL.*;
 
 public class Enemies extends Component {
     private final Point2D direction = new Point2D(FXGLMath.random(-1D, 1D), FXGLMath.random(-1D, 1D));
+
     @Override
     public void onUpdate(double tpf) {
         entity.translate(direction.multiply(4));
@@ -28,6 +29,13 @@ public class Enemies extends Component {
         if (entity.getY() >= getAppHeight()) {
             remove();
         }
+    }
+
+    public void shoot() {
+        spawn("bullet", new SpawnData(
+                getEntity().getPosition().getX() + 0,
+                getEntity().getPosition().getY() + 0)
+                .put("direction", direction));
     }
 
     public void remove() {

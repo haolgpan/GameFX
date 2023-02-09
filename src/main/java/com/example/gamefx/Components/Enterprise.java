@@ -9,7 +9,7 @@ import static com.almasb.fxgl.dsl.FXGL.*;
 
 public class Enterprise extends Component {
 
-    private static final double ROTATION_CHANGE = 0.01;
+    private static final double ROTATION_CHANGE = 0.05;
 
     private Point2D direction = new Point2D(1, 1);
 
@@ -21,27 +21,27 @@ public class Enterprise extends Component {
 
     private void checkForBounds() {
         if (entity.getX() < 0) {
-            die();
+            entity.setPosition(getAppWidth(), entity.getY());
         }
         if (entity.getX() >= getAppWidth()) {
-            die();
+            entity.setPosition(0, entity.getY());
         }
         if (entity.getY() < 0) {
-            die();
+            entity.setPosition(entity.getX(), getAppHeight());
         }
         if (entity.getY() >= getAppHeight()) {
-            die();
+            entity.setPosition(entity.getX(),0);
         }
     }
 
     public void shoot(int power) {
-        if(power < 5) {
+        if(power < 10) {
             spawn("bullet", new SpawnData(
                     getEntity().getPosition().getX() + 0,
                     getEntity().getPosition().getY() + 0)
                     .put("direction", direction));
         }
-        else if (power >= 5 && power < 10){
+        else if (power >= 10 && power < 20){
             spawn("bullet", new SpawnData(
                     getEntity().getPosition().getX() + 0,
                     getEntity().getPosition().getY() + 0)
@@ -55,7 +55,7 @@ public class Enterprise extends Component {
                     getEntity().getPosition().getY() - 30)
                     .put("direction", direction));
         }
-        else if (power >= 10){
+        else if (power >= 20){
             spawn("bullet", new SpawnData(
                     getEntity().getPosition().getX() + 0,
                     getEntity().getPosition().getY() + 0)

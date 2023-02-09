@@ -1,5 +1,6 @@
 package com.example.gamefx;
 
+import com.almasb.fxgl.dsl.components.ExpireCleanComponent;
 import com.example.gamefx.Components.Enemies;
 import com.example.gamefx.Components.Enterprise;
 import com.almasb.fxgl.dsl.components.AutoRotationComponent;
@@ -11,20 +12,20 @@ import com.almasb.fxgl.entity.SpawnData;
 import com.almasb.fxgl.entity.Spawns;
 import com.almasb.fxgl.entity.components.IrremovableComponent;
 import com.example.gamefx.Components.Life;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
-import javafx.scene.shape.Rectangle;
-
+import javafx.util.Duration;
 import static com.almasb.fxgl.dsl.FXGL.*;
-import static com.almasb.fxgl.dsl.FXGL.getAppHeight;
 
+
+/**
+ * The factory which defines how each entity looks like
+ */
 public class Factory implements EntityFactory {
 
     /**
      * Types of objects we are going to use in our game.
      */
     public enum EntityType {
-        BACKGROUND, CENTER, ENTERPRISE, ENEMIES, BULLET, BULLETEX, BULLETEX2, LIFE
+        BACKGROUND, CENTER, ENTERPRISE, ENEMIES, BULLET, ENEMYBULLET, LIFE, EXPLOSION
     }
 
     @Spawns("background")
@@ -81,6 +82,15 @@ public class Factory implements EntityFactory {
                 .collidable()
                 .build();
     }
+    @Spawns("enemyBullet")
+    public Entity newEnemyBullet(SpawnData data) {
+        return entityBuilder(data)
+                .type(EntityType.ENEMYBULLET)
+                .viewWithBBox(texture("laserred1.png", 20, 20))
+                .collidable()
+                .with(new ProjectileComponent(data.get("direction"), 340), new OffscreenCleanComponent())
+                .build();
+    }
 
     @Spawns("bullet")
     public Entity newBullet(SpawnData data) {
@@ -94,7 +104,7 @@ public class Factory implements EntityFactory {
     @Spawns("bulletEX")
     public Entity newBulletEX(SpawnData data) {
         return entityBuilder(data)
-                .type(EntityType.BULLETEX)
+                .type(EntityType.BULLET)
                 .viewWithBBox(texture("laserRed02.png", 30, 15))
                 .collidable()
                 .with(new ProjectileComponent(data.get("direction"), 340), new OffscreenCleanComponent())
@@ -103,10 +113,18 @@ public class Factory implements EntityFactory {
     @Spawns("bulletEX2")
     public Entity newBulletEX2(SpawnData data) {
         return entityBuilder(data)
-                .type(EntityType.BULLETEX2)
+                .type(EntityType.BULLET)
                 .viewWithBBox(texture("laserRed04.png", 30, 15))
                 .collidable()
                 .with(new ProjectileComponent(data.get("direction"), 500), new OffscreenCleanComponent())
+                .build();
+    }
+    @Spawns("explosion")
+    public Entity explosion(SpawnData data) {
+        return entityBuilder(data)
+                .type(EntityType.EXPLOSION)
+                .viewWithBBox(texture("laserYellow_burst.png", 50, 50))
+                .with(new ExpireCleanComponent(Duration.seconds(2)).animateOpacity())
                 .build();
     }
 }
