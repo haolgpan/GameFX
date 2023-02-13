@@ -93,6 +93,7 @@ public class MainGame extends GameApplication {
     protected void initGameVars(Map<String, Object> vars) {
         vars.put("score", 0);
         vars.put("lives", 5);
+        vars.put("killcount", 0);
     }
 
     /**
@@ -104,6 +105,7 @@ public class MainGame extends GameApplication {
         spawn("background", new SpawnData(0, 0).put("width", getAppWidth())
                 .put("height", getAppHeight()));
         spawn("center", new SpawnData(getAppCenter()));
+        getAudioPlayer().loopMusic(getAssetLoader().loadMusic("background.mp3"));
 
 
         // Add the player
@@ -117,13 +119,16 @@ public class MainGame extends GameApplication {
     protected void initPhysics() {
         onCollisionBegin(Factory.EntityType.ENTERPRISE, Factory.EntityType.CENTER, (enterprise, center) -> {
             this.player.getComponent(Enterprise.class).die();
+            set("killcount",0);
             play("sfx_lose.wav");
         });
         onCollisionBegin(Factory.EntityType.ENTERPRISE, Factory.EntityType.ENEMIES, (enemy, enemies) -> {
             this.player.getComponent(Enterprise.class).die();
+            set("killcount",0);
             play("sfx_lose.wav");
         });
         onCollisionBegin(Factory.EntityType.BULLET, Factory.EntityType.ENEMIES, (bullet, enemies) -> {
+            inc("killcount",1);
             inc("score", 1);
             bullet.removeFromWorld();
             enemies.removeFromWorld();
@@ -148,6 +153,14 @@ public class MainGame extends GameApplication {
         Text scoreValue = getUIFactoryService().newText("", Color.GOLD, 22);
         Text livesLabel = getUIFactoryService().newText("Lives", Color.WHITE, 22);
         Text livesValue = getUIFactoryService().newText("", Color.RED, 22);
+        Text killcountLabel = getUIFactoryService().newText("PowerUp", Color.WHITE, 22);
+        Text killcountValue = getUIFactoryService().newText("", Color.PURPLE, 22);
+
+        killcountLabel.setTranslateX(getAppWidth()/2);
+        killcountLabel.setTranslateY(20);
+
+        killcountValue.setTranslateX((getAppWidth()/2) + 110);
+        killcountValue.setTranslateY(20);
 
         scoreLabel.setTranslateX(getAppWidth() - 150);
         scoreLabel.setTranslateY(20);
@@ -163,8 +176,9 @@ public class MainGame extends GameApplication {
 
         scoreValue.textProperty().bind(getWorldProperties().intProperty("score").asString());
         livesValue.textProperty().bind(getWorldProperties().intProperty("lives").asString());
+        killcountValue.textProperty().bind(getWorldProperties().intProperty("killcount").asString());
 
-        getGameScene().addUINodes(scoreLabel, scoreValue, livesLabel, livesValue);
+        getGameScene().addUINodes(scoreLabel, scoreValue, livesLabel, livesValue, killcountLabel, killcountValue);
     }
 
     /**
@@ -172,16 +186,16 @@ public class MainGame extends GameApplication {
      */
     @Override
     protected void onUpdate(double tpf) {
-        power = geti("score");
-        if(power < 10) {
+        power = geti("killcount");
+        if(geti("score") < 10) {
             if (getGameWorld().getEntitiesByType(Factory.EntityType.ENEMIES).size() < 5) {
                 spawn("enemies", getAppWidth() / 2, getAppHeight() / 2);
             }
-        } else if (power >= 10 && power <= 30) {
+        } else if (geti("score") >= 10 && geti("score")  <= 30) {
             if (getGameWorld().getEntitiesByType(Factory.EntityType.ENEMIES).size() < 10) {
                 spawn("enemies", getAppWidth() / 2, getAppHeight() / 2);
             }
-        } else if (power > 30) {
+        } else if (geti("score")  > 30) {
             if (getGameWorld().getEntitiesByType(Factory.EntityType.ENEMIES).size() < 40) {
                 spawn("enemies", getAppWidth() / 2, getAppHeight() / 2);
             }

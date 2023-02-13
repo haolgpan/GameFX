@@ -65,7 +65,7 @@ public class Factory implements EntityFactory {
     public Entity newEnemies(SpawnData data) {
         return entityBuilder(data)
                 .type(EntityType.ENEMIES)
-                .viewWithBBox(texture("enemies.png", 50, 50))
+                .viewWithBBox(texture("shipYellow_manned.png", 50, 50))
                 .with((new AutoRotationComponent()).withSmoothing())
                 .with(new Enemies())
                 .collidable()
@@ -82,7 +82,7 @@ public class Factory implements EntityFactory {
                 .collidable()
                 .build();
     }
-    @Spawns("enemyBullet")
+    /*@Spawns("enemyBullet")
     public Entity newEnemyBullet(SpawnData data) {
         return entityBuilder(data)
                 .type(EntityType.ENEMYBULLET)
@@ -90,7 +90,7 @@ public class Factory implements EntityFactory {
                 .collidable()
                 .with(new ProjectileComponent(data.get("direction"), 340), new OffscreenCleanComponent())
                 .build();
-    }
+    }*/
 
     @Spawns("bullet")
     public Entity newBullet(SpawnData data) {
