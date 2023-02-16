@@ -21,16 +21,16 @@ public class Enterprise extends Component {
 
     private void checkForBounds() {
         if (entity.getX() < 0) {
-            entity.setPosition(getAppWidth(), entity.getY());
-        }
-        if (entity.getX() >= getAppWidth()) {
             entity.setPosition(0, entity.getY());
         }
-        if (entity.getY() < 0) {
-            entity.setPosition(entity.getX(), getAppHeight());
+        if (entity.getX() + entity.getWidth() > getAppWidth()) {
+            entity.setPosition(getAppWidth() - entity.getWidth(), entity.getY());
         }
-        if (entity.getY() >= getAppHeight()) {
-            entity.setPosition(entity.getX(),0);
+        if (entity.getY() < 0) {
+            entity.setPosition(entity.getX(), 0);
+        }
+        if (entity.getY() + entity.getHeight() > getAppHeight()) {
+            entity.setPosition(entity.getX(), getAppHeight() - entity.getHeight());
         }
     }
 
