@@ -6,6 +6,8 @@ import com.almasb.fxgl.core.math.FXGLMath;
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.entity.EntityFactory;
 import com.almasb.fxgl.entity.SpawnData;
+import com.almasb.fxgl.ui.ProgressBar;
+import com.almasb.fxgl.ui.UIFactoryService;
 import com.example.gamefx.Components.Enterprise;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
@@ -30,6 +32,7 @@ public class MainGame extends GameApplication {
      */
     private Entity player;
     private int power;
+    public ProgressBar progressBar;
 
     private static int screenWidth;
     private static int screenHeight;
@@ -57,8 +60,10 @@ public class MainGame extends GameApplication {
         settings.setWidth(1200);
         settings.setFullScreenAllowed(true);
         settings.setFullScreenFromStart(false);
+        settings.setMainMenuEnabled(true);
         settings.setTitle("Dead Space but Family Friendly");
         settings.setVersion("0.1");
+        settings.setFontGame("kenvector_future.ttf");
     }
 
     /**
@@ -95,6 +100,7 @@ public class MainGame extends GameApplication {
         vars.put("score", 0);
         vars.put("lives", 5);
         vars.put("killcount", 0);
+        progressBar = new ProgressBar();
     }
 
     /**
@@ -102,6 +108,7 @@ public class MainGame extends GameApplication {
      */
     @Override
     protected void initGame() {
+
         getGameWorld().addEntityFactory(this.factory);
         spawn("background", new SpawnData(0, 0).put("width", getAppWidth())
                 .put("height", getAppHeight()));
@@ -179,7 +186,12 @@ public class MainGame extends GameApplication {
         livesValue.textProperty().bind(getWorldProperties().intProperty("lives").asString());
         killcountValue.textProperty().bind(getWorldProperties().intProperty("killcount").asString());
 
-        getGameScene().addUINodes(scoreLabel, scoreValue, livesLabel, livesValue, killcountLabel, killcountValue);
+        progressBar.setTranslateX(getAppWidth() / 2 - 50);
+        progressBar.setTranslateY(30);
+        progressBar.setMaxValue(100.0);
+        //progressBar.currentValueProperty().bind(getWorldProperties().doubleProperty("progress").divide(100));
+
+        getGameScene().addUINodes(scoreLabel, scoreValue, livesLabel, livesValue, killcountLabel, progressBar);
     }
 
     /**
@@ -187,6 +199,7 @@ public class MainGame extends GameApplication {
      */
     @Override
     protected void onUpdate(double tpf) {
+        progressBar.setCurrentValue((double) geti("killcount")*10);
         power = geti("killcount");
         if(geti("score") < 10) {
             if (getGameWorld().getEntitiesByType(Factory.EntityType.ENEMIES).size() < 5) {

@@ -1,0 +1,674 @@
+19:16:35.938 [main                     ] DEBUG Logger               - Configured Logger
+19:16:35.940 [main                     ] DEBUG GameApplication      - Logging settings
+Title: Dead Space but Family Friendly
+Version: 0.1
+Width: 1200
+Height: 700
+Fullscreen: true
+Intro: false
+Profiling: false
+Single step:false
+App Mode: DEVELOPER
+Menu Key: ESCAPE
+Stage Style: DECORATED
+Scene Factory: class com.almasb.fxgl.app.scene.SceneFactory
+
+19:16:36.234 [JavaFX Application Thread] DEBUG FXGLApplication      - Initializing FXGL
+19:16:36.236 [JavaFX Application Thread] INFO  Engine               - FXGL-11.16 (25.05.2021 08.16) on WINDOWS (J:18.0.2.1 FX:16)
+19:16:36.236 [JavaFX Application Thread] DEBUG Engine               - JRE Vendor Name: Oracle Corporation
+19:16:36.236 [JavaFX Application Thread] DEBUG Engine               - Running on OS: Windows 10 version 10.0
+19:16:36.236 [JavaFX Application Thread] DEBUG Engine               - Architecture: amd64
+19:16:36.236 [JavaFX Application Thread] INFO  Engine               - Source code and latest versions at: https://github.com/AlmasB/FXGL
+19:16:36.236 [JavaFX Application Thread] INFO  Engine               -              Join the FXGL chat at: https://gitter.im/AlmasB/FXGL
+19:16:36.309 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Creating a JavaFX scene
+19:16:36.336 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Target settings size: 1200.0 x 700.0
+19:16:36.336 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled scene size:    1200.0 x 700.0
+19:16:36.336 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled ratio: (1.0, 1.0)
+19:16:36.337 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Set initial scene to FXGLStartupScene
+19:16:36.341 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Opening main window
+19:16:36.391 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Window border size: (14.4000244140625, 37.5999755859375)
+19:16:36.392 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled size: 1200.0 x 700.0
+19:16:36.392 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled ratio: (1.0, 1.0)
+19:16:36.392 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scene size: 1200.0 x 700.0
+19:16:36.392 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Stage size: 1214.4000244140625 x 737.5999755859375
+19:16:36.397 [FXGL Background Thread 1 ] DEBUG Engine               - Initializing environment variables
+19:16:36.427 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - User app class for loading assets: class com.example.gamefx.MainGame
+19:16:36.428 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Applying CSS: fxgl_dark.css
+19:16:36.428 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/ui/css/fxgl_dark.css
+19:16:36.452 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Initializing application scenes
+19:16:36.479 [FXGL Background Thread 1 ] DEBUG GameWorld            - Game world initialized
+19:16:36.513 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Physics world initialized: appHeight=700, physics.ppm=50,0
+19:16:36.514 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Using strategy: BRUTE_FORCE
+19:16:36.515 [FXGL Background Thread 1 ] DEBUG GameScene            - Game scene initialized: 1200x700
+19:16:36.521 [FXGL Background Thread 1 ] DEBUG FXGL.DefaultMenu     - createMenuBodyGameMenu()
+19:16:36.531 [FXGL Background Thread 1 ] DEBUG FXGL.DefaultMenu     - createOptionsMenu()
+19:16:36.537 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/textures/particles/smoke.png
+19:16:36.601 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/textures/particles/trace_horizontal.png
+19:16:36.618 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Application scenes initialized
+19:16:36.624 [FXGL Background Thread 1 ] DEBUG SystemBundleService  - Loading FXGL system data
+19:16:36.627 [FXGL Background Thread 1 ] DEBUG FileSystemAccess     - Reading from: C:\Users\Hao\Documents\DAM 2 PRO\GameFX\system\fxgl.bundle
+19:16:36.631 [FXGL Background Thread 1 ] DEBUG SystemBundleService  - Bundle FXGL: {}
+19:16:36.631 [FXGL Background Thread 1 ] DEBUG UpdaterService       - Checking for updates
+19:16:36.633 [FXGL Background Thread 4 ] DEBUG FXGLApplication      - Loading fonts
+19:16:36.634 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/ui/fonts/VarelaRound-Regular.ttf
+19:16:36.634 [FXGL Background Thread 1 ] DEBUG FXGLApplication      - Loading default localization
+19:16:36.634 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/languages/english.lang
+19:16:36.650 [FXGL Background Thread 1 ] INFO  FXGLApplication      - FXGL initialization took: 0,253 sec
+19:16:36.657 [JavaFX Application Thread] DEBUG Input                - Registered new binding: left - Left
+19:16:36.658 [JavaFX Application Thread] DEBUG Input                - Registered new binding: right - Right
+19:16:36.658 [JavaFX Application Thread] DEBUG Input                - Registered new binding: up - Up
+19:16:36.658 [JavaFX Application Thread] DEBUG Input                - Registered new binding: down - Down
+19:16:36.658 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Bullet - Space
+19:16:36.659 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/textures/fxgl_icon.png
+19:16:36.663 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/ui/fonts/kenvector_future.ttf
+19:16:36.667 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/ui/fonts/lucida_console.ttf
+19:16:36.671 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/ui/fonts/Courier-Prime.ttf
+19:16:36.672 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Hao/.m2/repository/com/github/almasb/fxgl/11.16/fxgl-11.16.jar!/fxglassets/textures/fxgl_default_cursor.png
+19:16:36.674 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Screenshot - CTRL+8
+19:16:36.674 [JavaFX Application Thread] DEBUG Input                - Registered new binding: System info dump - CTRL+9
+19:16:36.675 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Restart - CTRL+R
+19:16:36.675 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Toggle Debug Camera - CTRL+C
+19:16:36.678 [JavaFX Application Thread] DEBUG LoopRunner           - Starting loop
+19:16:36.678 [JavaFX Application Thread] DEBUG LoopRunner           - Initializing JavaFX AnimationTimerLoop
+19:16:36.679 [JavaFX Application Thread] DEBUG GameApplicationServi - Starting new game
+19:16:36.679 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+19:16:36.685 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from FXGLStartupScene and adding to FXGLLoadingScene
+19:16:36.686 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - FXGLStartupScene -> FXGLLoadingScene
+19:16:36.686 [JavaFX Application Thread] DEBUG GameApplicationServi - Clearing previous game
+19:16:36.686 [JavaFX Application Thread] DEBUG GameScene            - Clearing game scene
+19:16:36.686 [JavaFX Application Thread] DEBUG GameWorld            - Clearing game world
+19:16:36.686 [JavaFX Application Thread] DEBUG PhysicsWorld         - Clearing physics world
+19:16:36.687 [FXGL Background Thread 4 ] DEBUG FXGLApplication      - Initializing game
+19:16:36.687 [JavaFX Application Thread] DEBUG FXGLApplication      - Registering font factories with UI factory
+19:16:36.707 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/space.jpg
+19:16:36.831 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/center.png
+19:16:36.849 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/music/background.mp3
+19:16:36.927 [FXGL Background Thread 4 ] DEBUG AudioPlayer          - Playing music com.almasb.fxgl.audio.Music@6ec94448
+19:16:36.930 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/enterprise.png
+19:16:36.934 [FXGL Background Thread 4 ] INFO  FXGLApplication      - Game initialization took: 0,247 sec
+19:16:36.935 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+19:16:36.939 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from FXGLLoadingScene and adding to GameScene
+19:16:36.939 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - FXGLLoadingScene -> GameScene
+19:16:36.946 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/shipYellow_manned.png
+19:16:37.096 [FXGL Background Thread 2 ] INFO  UpdaterService       - Your current version:  11.16
+19:16:37.096 [FXGL Background Thread 2 ] INFO  UpdaterService       - Latest stable version: 17.2
+19:16:37.339 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/laserred1.png
+19:16:37.341 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/sounds/sfx_laser1.wav
+19:16:38.136 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/laserYellow_burst.png
+19:16:38.142 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/pill_green.png
+19:16:38.144 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:38.145 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/sounds/explosion.wav
+19:16:38.262 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/laserRed02.png
+19:16:38.264 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/sounds/sfx_laser2.wav
+19:16:38.540 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:38.710 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/textures/laserRed04.png
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - Logging environment variables
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - achievements: []
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - actualHeight: 700.0
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - actualHeightProperty: ReadOnlyDoubleProperty [value: 700.0]
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - actualWidth: 1200.0
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - actualWidthProperty: ReadOnlyDoubleProperty [value: 1200.0]
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - appIcon: fxgl_icon.png
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - applicationMode: DEVELOPER
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - cSSList: [fxgl_dark.css]
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - collisionDetectionStrategy: BRUTE_FORCE
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - configClass: Optional.empty
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - credits: []
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - defaultCursor: CursorInfo(imageName=fxgl_default_cursor.png, hotspotX=7.0, hotspotY=6.0)
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - devBBoxColorProperty: ObjectProperty [value: 0xff0000ff]
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - devEnableDebugCameraProperty: BooleanProperty [value: false]
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - devSensorColorProperty: ObjectProperty [value: 0xffff00ff]
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - devShowBBoxProperty: BooleanProperty [value: false]
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - devShowPositionProperty: BooleanProperty [value: false]
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - enabledMenuItems: []
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - engineServices: [class com.almasb.fxgl.app.services.FXGLAssetLoaderService, class com.almasb.fxgl.app.FXGLApplication$GameApplicationService, class com.almasb.fxgl.app.services.FXGLDialogService, class com.almasb.fxgl.app.services.IOTaskExecutorService, class com.almasb.fxgl.io.FileSystemService, class com.almasb.fxgl.localization.LocalizationService, class com.almasb.fxgl.app.services.SystemBundleService, class com.almasb.fxgl.profile.SaveLoadService, class com.almasb.fxgl.ui.FXGLUIFactoryServiceProvider, class com.almasb.fxgl.ui.FXGLDialogFactoryServiceProvider, class com.almasb.fxgl.audio.AudioPlayer, class com.almasb.fxgl.notification.impl.NotificationServiceProvider, class com.almasb.fxgl.achievement.AchievementService, class com.almasb.fxgl.cutscene.CutsceneService, class com.almasb.fxgl.minigames.MiniGameService, class com.almasb.fxgl.net.NetService, class com.almasb.fxgl.app.services.UpdaterService, class com.almasb.fxgl.dev.DevService]
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - fontGame: kenvector_future.ttf
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - fontMono: lucida_console.ttf
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - fontText: Courier-Prime.ttf
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - fontUI: VarelaRound-Regular.ttf
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - fullScreen: BooleanProperty [value: false]
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - gameDifficulty: MEDIUM
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - gameDifficultyProperty: ObjectProperty [value: MEDIUM]
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - globalMusicVolume: 0.5
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - globalMusicVolumeProperty: DoubleProperty [value: 0.5]
+19:16:39.634 [FXGL Background Thread 3 ] DEBUG Engine               - globalSoundVolume: 0.5
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - globalSoundVolumeProperty: DoubleProperty [value: 0.5]
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - height: 700
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - is3D: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isAndroid: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isBrowser: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isClickFeedbackEnabled: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isCloseConfirmation: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isDesktop: true
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isDeveloperMenuEnabled: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isEntityPreloadEnabled: true
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isExperimentalTiledLargeMap: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isFileSystemWriteAllowed: true
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isFullScreenAllowed: true
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isFullScreenFromStart: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isGameMenuEnabled: true
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isIOS: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isIntroEnabled: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isLinux: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isMac: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isMainMenuEnabled: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isManualResizeEnabled: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isMobile: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isNative: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isPreserveResizeRatio: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isProfilingEnabled: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isScaleAffectedOnResize: true
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isSingleStep: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isUserProfileEnabled: false
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - isWindows: true
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - language: ObjectProperty [value: ENGLISH]
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - menuKey: ESCAPE
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - mouseSensitivity: 0.2
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - notificationViewClass: class com.almasb.fxgl.notification.view.XboxNotificationView
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - pixelsPerMeter: 50.0
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - platform: WINDOWS
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - prefHeightProperty: ReadOnlyDoubleProperty [value: 700.0]
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - prefWidthProperty: ReadOnlyDoubleProperty [value: 1200.0]
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - profileDir: profiles/
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - profileName: StringProperty [value: DEFAULT]
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - randomSeed: -1
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - runtimeInfo: RuntimeInfo(platform=WINDOWS, version=11.16, build=25.05.2021 08.16)
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - saveFileExt: sav
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - scaledHeightProp$fxgl: DoubleProperty [bound, value: 700.0]
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - scaledWidthProp$fxgl: DoubleProperty [bound, value: 1200.0]
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - sceneFactory: com.almasb.fxgl.app.scene.SceneFactory@6d6f5145
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - secondsIn24h: 60
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - soundMenuBack: menu/back.wav
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - soundMenuPress: menu/press.wav
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - soundMenuSelect: menu/select.wav
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - soundNotification: core/notification.wav
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - stageStyle: DECORATED
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - supportedLanguages: [ENGLISH, FRENCH, GERMAN, HUNGARIAN, RUSSIAN]
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - ticksPerSecond: -1
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - title: Dead Space but Family Friendly
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - urlGithub: https://github.com/AlmasB/FXGL
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - urlLeaderboard: http://fxgl-top.herokuapp.com/
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - urlPOM: https://raw.githubusercontent.com/AlmasB/FXGL/release/README.md
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - userAppClass: class com.example.gamefx.MainGame
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - version: 0.1
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - versionCheckDays: 7
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - width: 1200
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - Logging services
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.FXGLAssetLoaderService
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.FXGLApplication$GameApplicationService
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.FXGLDialogService
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.IOTaskExecutorService
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.io.FileSystemService
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.localization.LocalizationService
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.SystemBundleService
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.profile.SaveLoadService
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.ui.FXGLUIFactoryServiceProvider
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.ui.FXGLDialogFactoryServiceProvider
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.audio.AudioPlayer
+19:16:39.635 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.notification.impl.NotificationServiceProvider
+19:16:39.636 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.achievement.AchievementService
+19:16:39.636 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.cutscene.CutsceneService
+19:16:39.636 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.minigames.MiniGameService
+19:16:39.636 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.net.NetService
+19:16:39.636 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.UpdaterService
+19:16:39.636 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.dev.DevService
+19:16:41.682 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:41.692 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:41.842 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:42.001 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:42.366 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:42.699 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:45.202 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:45.233 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:45.442 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:45.682 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:46.066 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:46.145 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:46.513 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:47.089 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:47.137 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:47.789 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:49.039 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:49.185 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:50.928 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:51.746 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:51.761 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:51.886 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Hao/Documents/DAM%202%20PRO/GameFX/target/classes/assets/sounds/sfx_lose.wav
+19:16:51.895 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:52.306 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:52.553 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:52.768 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:52.961 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:53.089 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:53.105 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:53.169 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:53.448 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:54.001 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:54.025 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:54.032 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:54.156 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:54.177 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:54.241 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:54.351 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:54.753 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:55.164 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:55.448 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:55.794 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:56.210 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:56.489 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:56.525 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:56.626 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:56.761 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:56.843 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:56.962 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:57.275 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:57.490 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:57.594 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:57.643 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:57.677 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:57.948 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:58.001 [JavaFX Application Thread] WARN  GameWorld            - Attempted to remove entity which is not active
+19:16:58.156 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:16:59.802 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:00.219 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:00.268 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:00.401 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:00.462 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:00.816 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:01.073 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:01.135 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:01.434 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:01.537 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:01.642 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:01.665 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:01.871 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:01.982 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:02.049 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:02.073 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.080 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.081 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.094 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.097 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.108 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.113 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.121 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.128 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.135 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.142 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.145 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.156 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.161 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.170 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.177 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.185 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.192 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.193 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.205 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.210 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.219 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.226 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.233 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.240 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.242 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.253 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.257 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.267 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.274 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.281 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.288 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.289 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.302 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.306 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.316 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.321 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.330 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.336 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.344 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.350 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.353 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.365 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:02.365 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.370 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:02.370 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.378 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.385 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.392 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.399 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.401 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.413 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.417 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.427 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.433 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.441 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.448 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.449 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.462 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.465 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.476 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.481 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.490 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.497 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.498 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.511 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.514 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.525 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.530 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.539 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.545 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.552 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.559 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.561 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.573 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.577 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.588 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.593 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.601 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.608 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.610 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.621 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.625 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.635 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.641 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.649 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.656 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.657 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.670 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.673 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.684 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.690 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.698 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.705 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.712 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.719 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.722 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.733 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.738 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.747 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.754 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.760 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.767 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.769 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.781 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.785 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.794 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.801 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.808 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.815 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.817 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.829 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.833 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:02.833 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.843 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.849 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.858 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.864 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.866 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.878 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.881 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.892 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.897 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.909 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.913 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.921 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.928 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.930 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.941 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.945 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.955 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.961 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.969 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.976 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.977 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.989 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:02.993 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.003 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.009 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.017 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.024 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.025 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.038 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.041 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.052 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.057 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.065 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.073 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.079 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.086 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.089 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.100 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:03.100 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.105 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.114 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.121 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.128 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.135 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.137 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.149 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.153 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.163 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.169 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.177 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.184 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.185 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.198 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.201 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:03.202 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:03.202 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.212 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.217 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.226 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.232 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.233 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.247 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.250 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.260 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.265 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.274 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.281 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.287 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.295 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.297 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.308 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.313 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.323 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.329 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.337 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.344 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.345 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.358 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.361 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.372 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.378 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.386 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.393 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.394 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.407 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.410 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.420 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.426 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.434 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.441 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.442 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.454 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.457 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.468 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.473 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:03.474 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.482 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.489 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.497 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.503 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.506 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.517 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.521 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.531 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.537 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.545 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.552 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.553 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.566 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.569 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.580 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.585 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.594 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.600 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.608 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.614 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.617 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.628 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.633 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.641 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.649 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.655 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.662 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.665 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.676 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.681 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.690 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.697 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.704 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.711 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.713 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.725 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.729 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.739 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.745 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.754 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.760 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.761 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.774 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.777 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.788 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.793 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.802 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.809 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.816 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.823 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.825 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.837 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.841 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.850 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.857 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.864 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.871 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.873 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.884 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.889 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.898 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.905 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.912 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.919 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.921 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.933 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.937 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.948 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.953 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.961 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.968 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.975 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.982 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.985 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:03.997 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.001 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.010 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.017 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.024 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.031 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.033 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.045 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.049 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.058 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.065 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.073 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.079 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.081 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.093 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.097 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.107 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.113 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.121 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.128 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.129 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.141 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.145 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.156 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.161 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.170 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.177 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.183 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.191 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.193 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.204 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.209 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.218 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.225 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.232 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.239 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.241 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.253 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.257 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.267 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.273 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.281 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.287 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.289 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.301 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.305 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.315 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.321 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.329 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.336 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.337 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.351 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.354 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.365 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.369 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.378 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.385 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.392 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.399 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.401 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:04.413 [JavaFX Application Thread] WARN  FXGL.ProgressBar     - Current value > max value. Setting max value as current
+19:17:05.419 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:06.946 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:07.153 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:08.059 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:08.305 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:09.122 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:09.985 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:10.161 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:10.205 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:11.322 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:11.816 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:11.851 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Push state: DialogSubScene
+19:17:11.851 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+19:17:11.856 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from GameScene and adding to DialogSubScene
+19:17:11.856 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - GameScene -> DialogSubScene
+19:17:13.408 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Pop state: DialogSubScene
+19:17:13.408 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+19:17:13.409 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from DialogSubScene and adding to GameScene
+19:17:13.409 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - GameScene <- DialogSubScene
+19:17:13.409 [JavaFX Application Thread] DEBUG GameApplicationServi - Starting new game
+19:17:13.409 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+19:17:13.419 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from GameScene and adding to FXGLLoadingScene
+19:17:13.419 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - GameScene -> FXGLLoadingScene
+19:17:13.419 [JavaFX Application Thread] DEBUG GameApplicationServi - Clearing previous game
+19:17:13.419 [JavaFX Application Thread] DEBUG GameScene            - Clearing game scene
+19:17:13.419 [JavaFX Application Thread] DEBUG GameWorld            - Clearing game world
+19:17:13.421 [JavaFX Application Thread] DEBUG PhysicsWorld         - Clearing physics world
+19:17:13.422 [FXGL Background Thread 2 ] DEBUG FXGLApplication      - Initializing game
+19:17:13.424 [FXGL Background Thread 2 ] DEBUG AudioPlayer          - Playing music com.almasb.fxgl.audio.Music@6ec94448
+19:17:13.425 [FXGL Background Thread 2 ] INFO  FXGLApplication      - Game initialization took: 0,003 sec
+19:17:13.426 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+19:17:13.430 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from FXGLLoadingScene and adding to GameScene
+19:17:13.430 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - FXGLLoadingScene -> GameScene
+19:17:19.484 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:20.050 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:20.378 [JavaFX Application Thread] WARN  Entity               - Entity already has component: com.almasb.fxgl.entity.components.CollidableComponent
+19:17:22.620 [JavaFX Application Thread] DEBUG FXGLApplication      - Exiting FXGL
+19:17:22.621 [JavaFX Application Thread] DEBUG LoopRunner           - Stopping loop
+19:17:22.621 [JavaFX Application Thread] DEBUG SystemBundleService  - Saving FXGL system data
+19:17:22.623 [JavaFX Application Thread] DEBUG FileSystemAccess     - Writing to: C:\Users\Hao\Documents\DAM 2 PRO\GameFX\system\fxgl.bundle
+19:17:22.626 [JavaFX Application Thread] DEBUG Async                - Shutting down background threads
+19:17:22.626 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Closing main window
+19:17:22.638 [JavaFX Application Thread] DEBUG Logger               - Closing Logger
