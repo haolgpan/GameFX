@@ -61,6 +61,8 @@ public class MainGame extends GameApplication {
         settings.setFullScreenAllowed(true);
         settings.setFullScreenFromStart(false);
         settings.setMainMenuEnabled(true);
+        settings.setSoundMenuBack("background.mp3");
+        settings.setAppIcon("icon.jpg");
         settings.setTitle("Dead Space but Family Friendly");
         settings.setVersion("0.1");
         settings.setFontGame("kenvector_future.ttf");
@@ -167,8 +169,8 @@ public class MainGame extends GameApplication {
         killcountLabel.setTranslateX(getAppWidth()/2);
         killcountLabel.setTranslateY(20);
 
-        killcountValue.setTranslateX((getAppWidth()/2) + 110);
-        killcountValue.setTranslateY(20);
+        //killcountValue.setTranslateX((getAppWidth()/2) + 110);
+        //killcountValue.setTranslateY(20);
 
         scoreLabel.setTranslateX(getAppWidth() - 150);
         scoreLabel.setTranslateY(20);
@@ -189,7 +191,6 @@ public class MainGame extends GameApplication {
         progressBar.setTranslateX(getAppWidth() / 2 - 50);
         progressBar.setTranslateY(30);
         progressBar.setMaxValue(100.0);
-        //progressBar.currentValueProperty().bind(getWorldProperties().doubleProperty("progress").divide(100));
 
         getGameScene().addUINodes(scoreLabel, scoreValue, livesLabel, livesValue, killcountLabel, progressBar);
     }
