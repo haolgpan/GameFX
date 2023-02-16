@@ -25,7 +25,8 @@ public class MainGame extends GameApplication {
     private final Factory factory = new Factory();
 
     /**
-     * Player object we are going to use to provide to the factory so it can start a bullet from the player center.
+     * Player object we are going to use to provide to the factory so it can start a bullet from the player center
+     * or multiple bullets.
      */
     private Entity player;
     private int power;
@@ -85,7 +86,7 @@ public class MainGame extends GameApplication {
     }
 
     /**
-     * General game variables. Used to hold the points and lives.
+     * General game variables. Show score, lives and powerup.
      *
      * @param vars The variables of the game which can be further extended here.
      */
@@ -182,7 +183,7 @@ public class MainGame extends GameApplication {
     }
 
     /**
-     * Gets called every frame _only_ in Play state.
+     * Constant update.
      */
     @Override
     protected void onUpdate(double tpf) {
