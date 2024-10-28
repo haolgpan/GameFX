@@ -1,6 +1,6 @@
-# 🚀 Space Defender 2D
+# 🚀 Dead Space Family Friendly 2D
 
-¡Bienvenido a **Space Defender 2D**! En este emocionante juego de disparos, debes enfrentarte a oleadas interminables de enemigos que emergen de un agujero negro. A medida que avanzas, podrás recolectar **power-ups** para mejorar tus habilidades y sobrevivir por más tiempo. Pero ten cuidado: ¡solo tienes 5 vidas!
+¡Bienvenido a **Dead Space Family Friendly 2D**! En este emocionante juego de disparos, debes enfrentarte a oleadas interminables de enemigos que emergen de un agujero negro. A medida que avanzas, podrás recolectar **power-ups** para mejorar tus habilidades y sobrevivir por más tiempo. Pero ten cuidado: ¡solo tienes 5 vidas!
 
 ## 🎮 Características del Juego
 
@@ -40,8 +40,3 @@ Desde el menú de opciones, puedes ajustar:
 - **Volumen de efectos**: Ajusta el volumen de los efectos de disparo y explosiones.
 - **Calidad de video**: Cambia entre diferentes configuraciones de calidad para optimizar el rendimiento en distintas computadoras.
 
-## ⚙️ Instalación
-
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tuusuario/space-defender-2d.git
